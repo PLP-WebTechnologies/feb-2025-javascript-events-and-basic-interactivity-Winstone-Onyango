@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Event Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Event Playground</h1>
+        <p>Explore various JavaScript events in action</p>
+    </header>
+
+    <main>
+        <!-- Section 1: Button Events -->
+        <section class="card" id="button-section">
+            <h2>Button Events</h2>
+            <div class="button-group">
+                <button id="click-button" class="action-btn">Click Me!</button>
+                <button id="color-changer" class="action-btn">Change My Color</button>
+                <button id="secret-button" class="action-btn">Try Something Special</button>
+            </div>
+            <p id="button-feedback">Button interactions will appear here</p>
+        </section>
+
+        <!-- Section 2: Hover Effects -->
+        <section class="card" id="hover-section">
+            <h2>Hover Effects</h2>
+            <div class="hover-container">
+                <div class="hover-box" id="hover-1">Hover Me 1</div>
+                <div class="hover-box" id="hover-2">Hover Me 2</div>
+                <div class="hover-box" id="hover-3">Hover Me 3</div>
+            </div>
+        </section>
+
+        <!-- Section 3: Image Gallery -->
+        <section class="card" id="gallery-section">
+            <h2>Image Gallery</h2>
+            <div class="gallery-container">
+                <img src="https://source.unsplash.com/random/300x200?nature=1" alt="Nature 1" class="gallery-img active">
+                <img src="https://source.unsplash.com/random/300x200?nature=2" alt="Nature 2" class="gallery-img">
+                <img src="https://source.unsplash.com/random/300x200?nature=3" alt="Nature 3" class="gallery-img">
+            </div>
+            <div class="gallery-controls">
+                <button id="prev-btn" class="gallery-btn">Previous</button>
+                <button id="next-btn" class="gallery-btn">Next</button>
+            </div>
+        </section>
+
+        <!-- Section 4: Accordion -->
+        <section class="card" id="accordion-section">
+            <h2>FAQ Accordion</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-btn">What is JavaScript?<span class="accordion-icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>JavaScript is a programming language that allows you to implement complex features on web pages.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">What are events?<span class="accordion-icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>Events are actions or occurrences that happen in the system you are programming, which the system tells you about so you can respond to them in some way.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Why use event listeners?<span class="accordion-icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>Event listeners let you set up functions to be called when a specified event happens on an element.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Keypress Detection -->
+        <section class="card" id="keypress-section">
+            <h2>Keypress Detection</h2>
+            <div class="keypress-box" id="keypress-box">
+                <p>Press any key to see the magic!</p>
+                <div class="keypress-display" id="keypress-display"></div>
+            </div>
+        </section>
+
+        <!-- Section 6: Form Validation -->
+        <section class="card" id="form-section">
+            <h2>Form Validation</h2>
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Name (required)</label>
+                    <input type="text" id="name" placeholder="Your name">
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email (must be valid)</label>
+                    <input type="email" id="email" placeholder="your@email.com">
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 chars)</label>
+                    <input type="password" id="password" placeholder="••••••••">
+                    <div class="error-message" id="password-error"></div>
+                    <div class="password-strength" id="password-strength"></div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with JavaScript magic ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
